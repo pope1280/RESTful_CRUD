@@ -1,0 +1,13 @@
+<div class="container">
+  
+  <h2> Update Note </h2>
+
+  <form id='new_note' action='/note/<%= @note.id %>/update' method='post'>
+    <input id='title' type='text' name='note[title]' value='<%= @note.title %>' required>
+    <textarea id='content' name='note[content]' required><%= @note.content %></textarea>
+    <input id='update_button' type='submit' value='Update It!'>
+  </form>
+  
+ <li id='cancel_button'><a href='/note/<%=@note.id%>/view'>Cancel</a></li> 	
+
+</div>

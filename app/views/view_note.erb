@@ -1,0 +1,17 @@
+<div class='container'>
+  <h2><%= @note.title %></h2>
+
+  <h3><%= @note.content %></h3>
+  <br>
+  
+
+  <li id='back_to_notes'><a href='/'>Back to Notes</a></li>
+  <li id='update_note'><a href='/note/<%=@note.id%>/update'>Update Note</a></li>
+  <li id='delete_note'><a href='/note/<%=@note.id%>/delete'>Delete Note</a></li>
+  
+<!--   <form id='back_to_notes' action='/note/<%=@note.id%>/delete' method='post'>
+  	<input type='submit' value="Delete Note">
+  </form> -->
+ 
+
+</div>
